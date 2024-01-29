@@ -1,6 +1,12 @@
 import random
 
+print('Podaj nick uczestnika: ')
+nick1 = input()
+print('Jaki tier wariacie')
+tierchoose = input()
 
+
+#Race skill
 t1=round(random.uniform(0.8,1), 2)
 t2=random.randint(75,100)/100
 t3=random.randint(70,100)/100
@@ -87,3 +93,17 @@ print(bfconcede)
 weathermgmt=round(random.uniform(0.75, 1), 2)
 print('Oto wartości umiejętności radzenia sobie kierowcy z pogodą')
 print(weathermgmt)
+
+if tierchoose is '1':
+    print('Oto lista umiejętności dla zawodnika o nazwie ' + nick1)
+    print('Race Skill: ' + str(t1))
+    print('Quali: ' + str(qualit1))
+    print('Aggro: ' + str(aggro))
+    print('Def: ' + str(defence))
+    print('Stamina: ' + str(stamina))
+    print('Consistency: ' + str(consistencyT1))
+    print('start skill: ' + str(startskillt1))
+    print('Wet Skill: ' + str(wetskillt1))
+    print('Tyre Mgmt: ' + str(tyremgmt))
+    print('BFConcede: ' + str(bfconcede))
+    print('WeatherMgmt: ' + str(weathermgmt))

@@ -1,9 +1,9 @@
 import random
 
-print('Podaj nick uczestnika: ')
-nick1 = input()
-print('Jaki tier wariacie')
-tierchoose = input()
+# print('Podaj nick uczestnika: ')
+# nick1 = input()
+# print('Jaki tier wariacie')
+# tierchoose = input()
 
 
 #Race skill
@@ -94,16 +94,63 @@ weathermgmt=round(random.uniform(0.75, 1), 2)
 print('Oto wartości umiejętności radzenia sobie kierowcy z pogodą')
 print(weathermgmt)
 
-if tierchoose is '1':
-    print('Oto lista umiejętności dla zawodnika o nazwie ' + nick1)
-    print('Race Skill: ' + str(t1))
-    print('Quali: ' + str(qualit1))
-    print('Aggro: ' + str(aggro))
-    print('Def: ' + str(defence))
-    print('Stamina: ' + str(stamina))
-    print('Consistency: ' + str(consistencyT1))
-    print('start skill: ' + str(startskillt1))
-    print('Wet Skill: ' + str(wetskillt1))
-    print('Tyre Mgmt: ' + str(tyremgmt))
-    print('BFConcede: ' + str(bfconcede))
-    print('WeatherMgmt: ' + str(weathermgmt))
+# if tierchoose is '1':
+#     print('Oto lista umiejętności dla zawodnika o nazwie ' + nick1)
+#     print('Race Skill: ' + str(t1))
+#     print('Quali: ' + str(qualit1))
+#     print('Aggro: ' + str(aggro))
+#     print('Def: ' + str(defence))
+#     print('Stamina: ' + str(stamina))
+#     print('Consistency: ' + str(consistencyT1))
+#     print('start skill: ' + str(startskillt1))
+#     print('Wet Skill: ' + str(wetskillt1))
+#     print('Tyre Mgmt: ' + str(tyremgmt))
+#     print('BFConcede: ' + str(bfconcede))
+#     print('WeatherMgmt: ' + str(weathermgmt))
+    
+# elif tierchoose is '2':
+#     print('Oto lista umiejętności dla zawodnika o nazwie ' + nick1)
+#     print('Race Skill: ' + str(t2))
+#     print('Quali: ' + str(qualit2))
+#     print('Aggro: ' + str(aggro))
+#     print('Def: ' + str(defence))
+#     print('Stamina: ' + str(stamina))
+#     print('Consistency: ' + str(consistencyT2))
+#     print('start skill: ' + str(startskillt2))
+#     print('Wet Skill: ' + str(wetskillt2))
+#     print('Tyre Mgmt: ' + str(tyremgmt))
+#     print('BFConcede: ' + str(bfconcede))
+#     print('WeatherMgmt: ' + str(weathermgmt))
+    
+    
+def tier1():
+        t1=round(random.uniform(0.8,1), 2)
+        qualit1=round(t1 + random.uniform(0,0.050)-random.uniform(0,0.075), 2)
+        aggro=round(random.uniform(0.3,1), 2)
+        defence=round(random.uniform(0.75,1), 2)
+        stamina=round(random.uniform(0.75,1), 2)
+        consistencyT1=round(t1 - aggro + (random.uniform(0.025, 0.040)), 2)
+        startskillt1 = round(t1 - (random.uniform(0, 0.020)), 2)
+        wetskillt1 = round(t1 - (random.uniform(0.001, 0.3)), 2)
+        tyremgmt = round(random.uniform(0.7, 1) - (aggro - 0.3), 2)
+        bfconcede=round(random.uniform(0.8, 1), 2)
+        weathermgmt=round(random.uniform(0.75, 1), 2)
+        
+        print(t1)
+        print(qualit1)
+        print(aggro)
+        print(defence)
+        print(stamina)
+        print(consistencyT1)
+        print(startskillt1)
+        print(wetskillt1)
+        print(tyremgmt)
+        print(bfconcede)
+        print(weathermgmt)
+
+print('pierwsza próba')    
+tier1()
+print('druga próba')
+tier1()
+
+        

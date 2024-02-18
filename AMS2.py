@@ -122,7 +122,8 @@ print(weathermgmt)
 #     print('BFConcede: ' + str(bfconcede))
 #     print('WeatherMgmt: ' + str(weathermgmt))
     
-    
+
+
 def tier1():
         t1=round(random.uniform(0.8,1), 2)
         qualit1=round(t1 + random.uniform(0,0.050)-random.uniform(0,0.075), 2)
@@ -136,17 +137,17 @@ def tier1():
         bfconcede=round(random.uniform(0.8, 1), 2)
         weathermgmt=round(random.uniform(0.75, 1), 2)
         
-        print(t1)
-        print(qualit1)
-        print(aggro)
-        print(defence)
-        print(stamina)
-        print(consistencyT1)
-        print(startskillt1)
-        print(wetskillt1)
-        print(tyremgmt)
-        print(bfconcede)
-        print(weathermgmt)
+        print('<race_skill>'+str(t1)+'</race_skill>')
+        print('<qualifying_skill>'+str(qualit1)+'</qualifying_skill>')
+        print('<aggression>'+str(aggro)+'</aggression>')
+        print('<defending>'+str(defence)+'</defending>')
+        print('<stamina>'+str(stamina)+'</stamina')
+        print('<consistency>'+str(consistencyT1)+'</consistency>')
+        print('<start_reactions>'+str(startskillt1)+'</start_reactions>')
+        print('<wet_skills>'+str(wetskillt1)+'</wet_skills>')
+        print('<tyre_management>'+str(tyremgmt)+'</tyre_management>')
+        print('<blue_flag_conceding>'+str(bfconcede)+'</blue_flag_conceding>')
+        print('<weather_tyre_changes>'+str(weathermgmt)+'</weather_tyre_changes>')
         
         
 def tier2():
@@ -220,12 +221,12 @@ def tier4():
         print(defence)
         print(stamina)
         print(consistencyT4)
-        print(startskillt3)
-        print(wetskillt3)
+        print(startskillt4)
+        print(wetskillt4)
         print(tyremgmt)
         print(bfconcede)
         print(weathermgmt)
-        
+
         
         
         
@@ -245,5 +246,19 @@ print('Czwarty tier')
 tier4()
 print('---')
 tier4()
+print('---')
 
-        
+def Rand(x , y):
+        return round(random.uniform(x, y), 2)
+
+players = [
+        'ciocia',
+        'mrpython',
+        'Lambert',
+        'Kravitch',
+        'Optio',
+        'noye',
+]
+
+for player in players:
+        print(f'{player}. {Rand(0.1,1)}')
